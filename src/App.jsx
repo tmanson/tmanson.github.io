@@ -3,13 +3,9 @@ import Header from "./components/Header.jsx";
 import { Outlet } from "react-router-dom";
 function App() {
   return (
-      <div className="flex p-0">
+      <div className="flex flex-col p-0 h-screen">
         <Header />
-        <div>
-          WIP
-          {/*<Experiences />*/}
-          {/*<Hobbies />*/}
-          {/*<Education />*/}
+        <div className="flex flex-1 h-full bg-gray-50">
          <Outlet/>
         </div>
       </div>

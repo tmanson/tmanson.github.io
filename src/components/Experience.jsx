@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 Experience.propTypes = {
@@ -12,12 +11,12 @@ Experience.propTypes = {
 
 function Experience({ experience }) {
   return (
-    <>
+    <div className="bg-gray-100">
       <div>{experience.start}</div>
       <div>{experience.end}</div>
       <div>{experience.description}</div>
       <div>{experience.company}</div>
-    </>
+    </div>
   );
 }
 
