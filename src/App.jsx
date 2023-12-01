@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header.jsx";
+import { Outlet } from "react-router-dom";
 function App() {
   return (
       <div className="flex p-0">
@@ -9,6 +10,7 @@ function App() {
           {/*<Experiences />*/}
           {/*<Hobbies />*/}
           {/*<Education />*/}
+         <Outlet/>
         </div>
       </div>
   );
